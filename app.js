@@ -23,7 +23,7 @@ Pics.prototype.render = function (){
 
     const $keySection = $('<select></select>');
     const ourKeys = $('#drop-down').html();
-
+    
     $keySection.html(ourKeys);
     
     $newSection.html(ourTemplate);
@@ -35,34 +35,33 @@ Pics.prototype.render = function (){
 
     $newSection.find('p').text(this.description);
 
-    $newSection.find('drop-down').text(this.keyword);
+    $keySection.find('drop-down').text(this.keyword);
+    $keySection.find('img').attr('class', this.keyword);
 
 
     $('main').append($newSection);
-    // $('drop-down').append($keySection);
+    
 }
 
 $.get('page1.json', data => {
     allKeywords = [];
-    // let option ='';
+  
     data.forEach(pics => {
         if (!allKeywords.includes(pics.keyword)){
                allKeywords.push(pics.keyword)
-        // option += '<option value="' + allKeywords.forEach + '">' + '</option>';
         }
-        
-        // option += '<option value="' + allKeywords.forEach + '">' + '</option>';
-        $('#drop-down').append(allKeywords);
-        console.log(allKeywords);
+
+        $('#drop-down').append($('<option></option>').attr('value', pics.keyword).text(pics.keyword).attr('class', pics.keyword))
 
         new Pics(pics).render();
     })
 })
+allKeywords.forEach (keyword => {
+    const $keySection = $(`<option value= ${keyword}</option>`);
+    $('select').append($keySection);
+    console.log('hi');
+})
 
-$.get('page1.json', key => {
-    key.forEach(allKeywords => {
-        $('#drop-down').append(allKeywords);
-    })
-}) 
+
 
 // console.log(allKeywords);
