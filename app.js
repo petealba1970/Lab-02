@@ -18,29 +18,15 @@ function Pics(hornObj){
 Pics.prototype.render = function (){
 
     const ourTemplate = $('#photo-template').html();
-
     const $newSection = $('<section></section>');
-
-    const $keySection = $('<select></select>');
-    const ourKeys = $('#drop-down').html();
-    
-    $keySection.html(ourKeys);
-    
+    // const ourKeys = $('#drop-down').html();
+    // $newSection.html(ourKeys);
     $newSection.html(ourTemplate);
-
     $newSection.find('h2').text(this.title);
-
     $newSection.find('img').attr('src', this.image_url);
-    $newSection.find('img').attr('alt', this.title);
-
     $newSection.find('p').text(this.description);
-
-    $keySection.find('drop-down').text(this.keyword);
-    $keySection.find('img').attr('class', this.keyword);
-
-
+    $newSection.find('img').attr('class', this.keyword);
     $('main').append($newSection);
-    
 }
 
 $.get('page1.json', data => {
@@ -56,12 +42,21 @@ $.get('page1.json', data => {
         new Pics(pics).render();
     })
 })
-allKeywords.forEach (keyword => {
-    const $keySection = $(`<option value= ${keyword}</option>`);
-    $('select').append($keySection);
-    console.log('hi');
-})
+
+$('select').on('change', function () {
+
+    let clickedPic = $(this).val();
+  
+    $('h2').hide();
+    $('img').hide();
+    $('p').hide();
+    
+    $(`.${clickedPic}`).show();
+
+  })
 
 
 
-// console.log(allKeywords);
+
+
+
