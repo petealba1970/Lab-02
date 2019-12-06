@@ -42,6 +42,7 @@ $.get('page1.json', data => {
         new Pics(pics).render();
     })
 })
+// $('#drop-down').append($('<option></option>').attr('value', allKeywords).text(allKeywords).attr('class', allKeywords))
 
 $('select').on('change', function () {
 
@@ -54,7 +55,6 @@ $('select').on('change', function () {
     $(`.${clickedPic}`).show();
 
   })
-
 
 
 
