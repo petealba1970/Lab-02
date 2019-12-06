@@ -5,14 +5,14 @@
 }
 
 header {
-  border: solid black 5px;
+  border: dashed black 5px;
   background-color: red;
 }
 #horns{
   text-align: center;  
 }
 h2{
-  border:solid rgb(0, 128, 79);
+  border:solid orange;
 }
 img{
   height: 100px;
@@ -24,7 +24,7 @@ p{
 border:solid black 5px;
 margin: 5 px;
     width:100%;
-    position: relative; word-break: break-all; background:red 
+      position: relative; word-break: break-all; background:red ;    
     }
 
  main{
@@ -33,7 +33,6 @@ margin: 5 px;
   flex-flow: row wrap;
   align-items: center;
 justify-content: center;
-  background-color: grey;  
+  background-color: grey;   
 }
-#photo-template{height:500 px;
-}
+
