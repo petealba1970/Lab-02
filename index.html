@@ -4,7 +4,6 @@
     <title>The Gallery of Horns</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script id="entry-template" type="text/x-handlebars-template"></script>
   </head>
   <body>
     <header>
@@ -13,16 +12,15 @@
         <option value="default">Filter by Keyword</option>
       </select>
     </header>
-    <div class="entry">
-      <h2>{{title}}</h2>
-      <div>{{img_url}}</div>
-      <p>{{description}}</p>
-      
-
-    </div>
-    <main></main>
+    <main>
+      <section id="photo-template">
+        <h2></h2>
+        <img src="" alt="">
+        <p></p>
+      </section>
+    </main>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.min.js"></script>
+
     <script type="text/javascript" src="app.js"></script>
     <footer>
       &copy; 2018 Code Fellows
