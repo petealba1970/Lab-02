@@ -11,6 +11,9 @@ header {
 #horns{
   text-align: center;  
 }
+h2{
+  border:solid rgb(0, 128, 79);
+}
 img{
   height: 100px;
   padding: 10px;
