@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Solway&display=swap');
+
+*{
+  font-family: 'Solway', sans-serif;
+}
+
+header {
+  border: solid black 5px;
+  background-color: red;
+}
+#horns{
+  text-align: center;  
+}
+img{
+  height: 100px;
+  
+}
+p{
+border:solid black 2px;
+margin: 5 px;
+    width:100%;
+    position: relative; word-break: break-all; background:red 
+    }
+
+ main{
+  
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: center;
+justify-content: center;
+  background-color: grey;
+  
+}
