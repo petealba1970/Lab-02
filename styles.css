@@ -15,9 +15,15 @@ img{
   height: 100px;
   
 }
-
+p{
+border:solid black 2px;
+margin: 5 px;
+    width:100%;
+    position: relative; word-break: break-all; background:red 
+    }
 
  main{
+  
   display: inline-flex;
   flex-flow: row wrap;
   align-items: center;
