@@ -13,10 +13,12 @@ header {
 }
 img{
   height: 100px;
+  padding: 10px;
+  border: solid black;
   
 }
 p{
-border:solid black 2px;
+border:solid black 5px;
 margin: 5 px;
     width:100%;
     position: relative; word-break: break-all; background:red 
@@ -28,6 +30,7 @@ margin: 5 px;
   flex-flow: row wrap;
   align-items: center;
 justify-content: center;
-  background-color: grey;
-  
+  background-color: grey;  
+}
+#photo-template{height:500 px;
 }
