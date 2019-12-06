@@ -4,8 +4,36 @@
   font-family: 'Solway', sans-serif;
 }
 
+header {
+  border: dashed black 5px;
+  background-color: red;
+}
+#horns{
+  text-align: center;  
+}
+h2{
+  border:solid orange;
+}
 img{
-  height: 150px;
-  margin: 10px;
- 
+  height: 100px;
+  padding: 10px;
+  border: solid black;
+  
+}
+p{
+border:solid black 5px;
+margin: 5 px;
+    width:100%;
+      position: relative; word-break: break-all; background:red 
+    }
+
+ main{
+  
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: center;
+justify-content: center;
+  background-color: grey;  
+}
+#photo-template{height:500 px;
 }

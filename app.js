@@ -52,9 +52,11 @@ $.get('page1.json', data => {
 
     $('#drop-down').append($('<option></option>').attr('value', allKeywords).text(pics.keyword).attr('class', pics.keyword));
 
+
     new Pics(pics).render();
   });
 });
+
 
 $('select').on('change', function () {
 
@@ -67,7 +69,6 @@ $('select').on('change', function () {
   $(`.${clickedPic}`).show();
 
 });
-
 
 
 
