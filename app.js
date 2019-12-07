@@ -35,14 +35,13 @@ $.get('page1.json', data => {
     data.forEach(pics => {
         if (!allKeywords.includes(pics.keyword)){
                allKeywords.push(pics.keyword)
+               $('#drop-down').append($('<option></option>').attr('value', pics.keyword).text(pics.keyword).attr('class', pics.keyword))   
+               console.log(pics.keyword);     
         }
-
-        $('#drop-down').append($('<option></option>').attr('value', pics.keyword).text(pics.keyword).attr('class', pics.keyword))
 
         new Pics(pics).render();
     })
 })
-// $('#drop-down').append($('<option></option>').attr('value', allKeywords).text(allKeywords).attr('class', allKeywords))
 
 $('select').on('change', function () {
 
