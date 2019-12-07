@@ -24,7 +24,7 @@ p{
 border:solid black 5px;
 margin: 5 px;
     width:100%;
-      position: relative; word-break: break-all; background:red 
+      position: relative; word-break: break-all; background:red     
     }
 
  main{
@@ -34,6 +34,14 @@ margin: 5 px;
   align-items: center;
 justify-content: center;
   background-color: grey;  
+  line-break: normal;
+
 }
-#photo-template{height:500 px;
+/* #photo-template{height:500 px;
+} */
+section{
+   width: 385px;
+   margin: 10px;
+   overflow-wrap: break-word;
+   
 }
