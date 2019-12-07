@@ -35,9 +35,10 @@ $.get('page1.json', data => {
     data.forEach(pics => {
         if (!allKeywords.includes(pics.keyword)){
                allKeywords.push(pics.keyword)
+               $('#drop-down').append($('<option></option>').attr('value', pics.keyword).text(pics.keyword).attr('class', pics.keyword))
         }
 
-        $('#drop-down').append($('<option></option>').attr('value', pics.keyword).text(pics.keyword).attr('class', pics.keyword))
+        // $('#drop-down').append($('<option></option>').attr('value', pics.keyword).text(pics.keyword).attr('class', pics.keyword))
 
         new Pics(pics).render();
     })
