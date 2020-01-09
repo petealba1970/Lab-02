@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <title>The Gallery of Horns</title>
@@ -21,6 +21,51 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
+    <script type="text/javascript" src="app.js"></script>
+    <footer>
+      &copy; 2018 Code Fellows
+    </footer>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Gallery of Horns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+   
+    <header>
+      <h1 class="heading">The Gallery of Horns</h1>
+      <div id="menus-and-pages">
+        <select id="drop-down-menu" class="drop-down-menu">
+          <option id="drop-down-option" value=""> keyword </option>
+        </select>
+        <select id="drop-down-horns" class="drop-down-horns">
+          <option id="drop-down-option-horns" value=""> horns </option>
+        </select>
+        <article id="pagination">
+          <a id="page-1"> Page 1 </a>
+          <a id="page-2"> Page 2 </a>
+        </article>
+      </div>
+    </header>
+    <main>
+    <div class="entry">
+      <script id="photo-template-handlebars" type="text/x-handlebars-template">
+        <section>
+      <h2>{{title}}</h2>
+      <img src="{{image_url}}" alt="{{title}}" data-keyword="{{keyword}}" data-horns="{{horns}}" class="{{keyword}}">
+      <p>{{description}}</p>
+      </section>
+    </script>
+    <section id="creatures">
+    </section>
+    </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <footer>
       &copy; 2018 Code Fellows
