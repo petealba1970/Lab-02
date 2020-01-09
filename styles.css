@@ -1,47 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Solway&display=swap');
-
-*{
-  font-family: 'Solway', sans-serif;
-}
-
 header {
-  border: dashed black 5px;
-  background-color: red;
+  text-align: center;
+  margin-top: 20px;
 }
-#horns{
-  text-align: center;  
+
+#creatures {
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  
 }
-h2{
-  border:solid orange;
+section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 200px;
+  border:solid blue 2px;
+}
+footer {
+  clear: both;
 }
 img{
-  height: 100px;
-  padding: 10px;
-  border: solid black;
-  
+  max-width: 90%;
+  float: left;
+  margin: 10px;
+  border: 2px solid rgb(148, 90, 90); 
 }
-p{
-border:solid black 5px;
-margin: 5 px;
-    width:100%;
-      position: relative; word-break: break-all; background:red     
-    }
+body{
+  background-color: grey;
+  width:910px;
 
- main{
-  
-  display: inline-flex;
-  flex-flow: row wrap;
-  align-items: center;
-justify-content: center;
-  background-color: grey;  
-  line-break: normal;
 
-}
-/* #photo-template{height:500 px;
-} */
-section{
-   width: 385px;
-   margin: 10px;
-   overflow-wrap: break-word;
-   
+P{
+  border: solid black 2px;
+  max-width: 95%;
+  padding-left: 2px;
 }
