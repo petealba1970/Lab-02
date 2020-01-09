@@ -7,6 +7,7 @@ header {
   display: flex;
   flex-direction: row;
   max-width: 90%;
+  margin-left: 50px;
   
 }
 section{
@@ -16,6 +17,7 @@ section{
   text-align: center;
   max-width: 200px;
   border:solid blue 2px;
+  background-color: rgb(182, 58, 58);
 }
 footer {
   clear: both;
@@ -28,7 +30,7 @@ img{
 }
 body{
   background-color: grey;
-  width:910px;
+  width:907px;
 }
 P{
   border: solid black 2px;
