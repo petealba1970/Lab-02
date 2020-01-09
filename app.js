@@ -2,7 +2,7 @@
 
 const picsArray = [];
 let allKeywords = [];
-const hornsArray =[];
+let hornsArray =[];
 
 function Pics(hornObj){
   this.title = hornObj.title;
@@ -40,7 +40,6 @@ $('#page-1').click(function () {
   $('#drop-down-menu').html('')
   $('#drop-down-menu').append($('<option></option>').text(' keyword '))
   let allKeywords = [];
-  let hornsArray = [];
   $.get('page1.json', data => {
     data.forEach(pics => {
       new Pics(pics).render();

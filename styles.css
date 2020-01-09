@@ -35,3 +35,10 @@ P{
   max-width: 95%;
   padding-left: 2px;
 }
+a#page-1{
+  border:solid black 1px;
+}
+a#page-2{
+  border:solid black 1px;
+  margin-top: 2px;
+}
