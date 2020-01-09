@@ -58,6 +58,7 @@ $('#page-2').click(function () {
   $('section').html('');
   $('#drop-down-menu').html('');
   $('#drop-down-menu').append($('<option></option>').text(' keyword '))
+  let allKeywords = [];
   $.get('page2.json', data => {
     data.forEach(pics => {
       new Pics(pics).render();
@@ -70,6 +71,7 @@ $('#page-2').click(function () {
         $('#drop-down-horns').append($('<option></option>').attr('value', pics.horns).text(pics.horns).attr('class', pics.keyword).attr('data-horns', pics.horns))
       }
     })
+    console.log(allKeywords);
   })
 })
 $('#drop-down-option').click(function () {
